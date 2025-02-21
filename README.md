@@ -6,10 +6,10 @@ cd Dishack-hackathon-website
 python3 app.py
 ```
 
-example of doctor login:
-email :doctor1@example.com
-password :password123
+example of doctor login:<br/>
+email :doctor1@example.com<br/>
+password :password123<br/>
 
-example of patient login :
-UID :123456
-password :patient123
+example of patient login :<br/>
+UID :123456<br/>
+password :patient123<br/>
