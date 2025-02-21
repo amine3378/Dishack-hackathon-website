@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile du Patient</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <h1>Département de la Santé</h1>
+    </div>
+    <div class="container">
+        <div class="patient-profile">
+            <h2>Profile du Patient </h2>
+            <div class="patient-info">
+                <!-- Display Patient Picture -->
+                <div class="patient-picture">
+                    <img src="{{ url_for('static', filename='pictures/' + patient.picture) }}" alt="{{ patient.name }}">
+                </div>
+                <p><strong>Nom:</strong> {{ patient.name }}</p>
+                <p><strong>Age:</strong> {{ patient.age }}</p>
+                <p><strong>Genre:</strong> {{ patient.gender }}</p>
+            </div>
+
+            <h2>Dossier medicale</h2>
+            <ul class="medical-history">
+                {% for record in patient.medical_history %}
+                    <li>
+                        <strong>{{ record.date }}:</strong> {{ record.document }}
+                        <a href="{{ url_for('download_file', filename=record.file) }}" download>Telecharger</a>
+                    </li>
+                {% endfor %}
+            </ul>
+
+            <a href="{{ url_for('dashboard') }}">Retour </a>
+        </div>
+    </div>
+    <div class="footer">
+        <p>&copy; Département de la Santé 2023. Tous droits réservés.</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,249 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* Header */
+.header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+/* Login Page */
+.login-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #e9ecef;
+}
+
+.login-form {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+.login-form h2 {
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    color: #007bff;
+}
+
+.login-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #555;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.login-form button {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Dashboard */
+.dashboard {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 2rem;
+}
+
+.dashboard h2 {
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    color: #007bff;
+}
+
+.dashboard p {
+    margin-bottom: 1rem;
+}
+
+.dashboard form {
+    margin-bottom: 1.5rem;
+}
+
+.dashboard input {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.dashboard button {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.dashboard button:hover {
+    background-color: #218838;
+}
+
+/* Patient Profile */
+.patient-profile {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 2rem;
+}
+
+.patient-profile h2 {
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    color: #007bff;
+}
+
+.patient-info p {
+    margin: 0.5rem 0;
+    color: #333;
+}
+
+.patient-info strong {
+    color: #555;
+}
+
+.medical-history {
+    list-style-type: none;
+    padding: 0;
+}
+
+.medical-history li {
+    background: #f8f9fa;
+    margin: 0.5rem 0;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.medical-history li:hover {
+    background-color: #e9ecef;
+}
+
+.medical-history li strong {
+    color: #007bff;
+}
+
+.medical-history li a {
+    color: #28a745;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.medical-history li a:hover {
+    color: #218838;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #007bff;
+    color: #fff;
+    margin-top: 2rem;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.footer p {
+    margin: 0;
+}
+
+/* Flash Messages */
+.flash {
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.flash.error {
+    background-color: #ffebee;
+    color: #c62828;
+}
+
+.flash.success {
+    background-color: #e8f5e9;
+    color: #2e7d32;
+}
+
+/* Patient Picture Styles */
+.patient-picture {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.patient-picture img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid #007bff;
+    object-fit: cover;
+}
