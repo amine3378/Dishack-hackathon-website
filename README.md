@@ -3,6 +3,7 @@ you can try it out by running on your terminal:
 ```
 git clone https://github.com/amine3378/Dishack-hackathon-website.git
 cd Dishack-hackathon-website
+pip install -r requirements.txt
 python3 app.py
 ```
 go into your browser and type:<br/>
